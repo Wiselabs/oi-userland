@@ -780,6 +780,8 @@ PYTHON_DATA= $(PYTHON_LIB)
 
 JAVA7_HOME =	/usr/jdk/instances/openjdk1.7.0
 JAVA8_HOME =	/usr/jdk/instances/openjdk1.8.0
+JAVA9_HOME =	/usr/jdk/instances/openjdk9
+JAVA10_HOME =	/usr/jdk/instances/openjdk10
 JAVA_HOME = $(JAVA8_HOME)
 
 # This is the default BUILD version of perl

@@ -1,0 +1,11 @@
+--- make/launcher/LauncherCommon.gmk.orig	ter abr 13 14:51:40 2021
++++ make/launcher/LauncherCommon.gmk	ter abr 13 14:51:59 2021
+@@ -192,7 +192,7 @@
+           -DPROGNAME='"$1"' \
+           $$($1_CFLAGS), \
+       CFLAGS_linux := -fPIC, \
+-      CFLAGS_solaris := -KPIC -DHAVE_GETHRTIME, \
++      CFLAGS_solaris := -fPIC -DHAVE_GETHRTIME, \
+       CFLAGS_windows := $$($1_CFLAGS_windows), \
+       LDFLAGS := $$(LDFLAGS_JDKEXE) \
+           $$(ORIGIN_ARG) \

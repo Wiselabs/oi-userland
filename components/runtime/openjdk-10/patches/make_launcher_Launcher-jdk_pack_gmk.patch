@@ -1,0 +1,11 @@
+--- make/launcher/Launcher-jdk.pack.gmk.orig	ter jan  8 10:44:54 2019
++++ make/launcher/Launcher-jdk.pack.gmk			ter abr 13 14:45:24 2021
+@@ -80,7 +80,7 @@
+     CFLAGS := $(UNPACKEXE_CFLAGS) $(CXXFLAGS_JDKEXE) -DFULL, \
+     CFLAGS_release := -DPRODUCT, \
+     CFLAGS_linux := -fPIC, \
+-    CFLAGS_solaris := -KPIC, \
++    CFLAGS_solaris := -fPIC, \
+     CFLAGS_macosx := -fPIC, \
+     DISABLED_WARNINGS_gcc := unused-result, \
+     MAPFILE := $(UNPACK_MAPFILE),\

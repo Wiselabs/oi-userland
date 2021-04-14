@@ -1,0 +1,11 @@
+--- ../openjdk10-10.0.46-original/make/launcher/Launcher-java.base.gmk	ter jan  8 10:44:55 2019
++++ make/launcher/Launcher-java.base.gmk	ter abr 13 14:49:04 2021
+@@ -79,7 +79,7 @@
+       CFLAGS := $(CFLAGS_JDKEXE) \
+           -I$(TOPDIR)/src/$(MODULE)/share/native/libjli, \
+       CFLAGS_linux := -fPIC, \
+-      CFLAGS_solaris := -KPIC, \
++      CFLAGS_solaris := -fPIC, \
+       LDFLAGS := $(LDFLAGS_JDKEXE), \
+       OBJECT_DIR := $(SUPPORT_OUTPUTDIR)/native/$(MODULE)/jexec_obj, \
+       OUTPUT_DIR := $(SUPPORT_OUTPUTDIR)/modules_libs/$(MODULE), \
